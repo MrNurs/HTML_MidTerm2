@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Searcher</h1>
+        <div class="information_enter">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Enter ingredients or dish name..." >
+                <button type="button" id="submit" class="btn">Find me</button>
+            </div>
+        </div>
+        
+        <div class="results_recipe">
+            <div id="results_info"></div>
+            <button id="cancelBtn" class="hidden">&times;</button>
+        </div>
+        <div id="results"></div>
+        <div id="suggestions"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

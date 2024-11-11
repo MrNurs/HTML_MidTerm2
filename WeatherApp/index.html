@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app-container">
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city name" oninput="" autocomplete="off"/>
+      <button class="btn" id="btn1" onclick="getWeather()">Search</button>
+      <button class="btn" id="btn2" onclick="getLocationWeather()">Use Current Location</button>
+      <label for="unitToggle">C° / F°</label>
+      <input type="checkbox" id="unitToggle" onchange="toggleUnits()">
+    </div>
+    <div id="currentWeather" class="weather-display">
+      <h2 id="cityName"></h2>
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+      <p id="windSpeed"></p>
+      <img id="weatherIcon" src="" alt="Weather Icon" />
+    </div>
+    <div id="forecast" class="forecast">
+      <h3>5-Day Forecast</h3>
+      <div id="forecastList"></div>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

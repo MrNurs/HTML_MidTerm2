@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header_wrapper">
+            <h1 class="brend">Movies App</h1>
+            <div class="search-container">
+                <button id="search-btn">Search</button>
+                <input type="text" id="search" placeholder="Search for movies..." >
+                <div id="suggestions" class="suggestions-container"></div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container">
+            <div id="movie-search" class="cards"></div>
+        </div>
+        <h2>Trend</h2>
+        <div class="container">
+            <div id="war" class="cards"></div>
+        </div>
+        
+        <h2>For Kids</h2>
+        <div class="container">
+            <div id="kids" class="cards"></div>
+        </div>
+
+        <h2>Thriller</h2>
+        <div class="container">
+            <div id="genres"></div>
+        </div>
+        
+        
+
+        <div id="movie-details-modal" class="modal">
+            <div class="modal-content" id="modal-info">
+
+                <span id="close-modal">&times;</span>
+                <h2 id="movie-title"></h2>
+                <p id="movie-synopsis"></p>
+                <p><strong>Rating:</strong> <span id="movie-rating"></span></p>
+                <p><strong>Runtime:</strong> <span id="movie-runtime"></span> minutes</p>
+                <h3>Cast:</h3>
+                <ul id="movie-cast"></ul>
+                <button id="add-to-watchlist">Add to Watchlist</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
